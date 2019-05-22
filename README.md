@@ -1,4 +1,4 @@
-# Kubernetes Hands-on tutorial
+# Kubernetes Hands-on Workshop
 
 ## Labs
 
