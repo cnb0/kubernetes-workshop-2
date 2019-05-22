@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: helloworld-deployment
+  labels:
+    app: helloworld
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: helloworld
+    spec:
+      containers:
+      - name: hello-k8
+        image: tshaiman/hello-k8:1.0
+        resources:
+          limits:
+            cpu: "250m" 
+        ports:
+        - name: app-port
+          containerPort: 3000
+          
