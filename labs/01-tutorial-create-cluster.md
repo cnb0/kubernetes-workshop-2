@@ -10,7 +10,7 @@ gcloud auth login
 gcloud config set project [project-id] 
 ```
 
-4.Set the GCE compute zone:
+4. Set the GCE compute zone:
 
 ```
 gcloud config set compute/zone europe-west1-c
@@ -22,7 +22,7 @@ gcloud config set compute/zone europe-west1-c
 gcloud container clusters create k8-demo 
 ```
 
-6. update the kubectl config in the cloud shell
+6. Update the kubectl config in the cloud shell
 
 ```
 gcloud container clusters get-credentials k8-demo
