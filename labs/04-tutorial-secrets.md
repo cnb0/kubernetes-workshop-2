@@ -13,19 +13,19 @@ cat << EOF > config.json
 EOF
 ```
 
-Create the `oscon` secret:
+Create the `tikal` secret:
 
 ```
-kubectl create secret generic oscon \
+kubectl create secret generic tikal \
   --from-literal=username=admin \
   --from-literal=password=123456789 \
   --from-file=config.json
 ```
 
-Describe the `oscon` secret: 
+Describe the `tikal` secret: 
 
 ```
-kubectl describe secrets oscon
+kubectl describe secrets tikal
 ```
 
 Run the `secrets` job to fetch the secrets and log the secrets:
