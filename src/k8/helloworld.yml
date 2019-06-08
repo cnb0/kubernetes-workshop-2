@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: hello-k8
-        image: tshaiman/hello-k8:1.0
+        image: tshaiman/hello-java:1.0
         resources:
           limits:
             cpu: "250m" 
