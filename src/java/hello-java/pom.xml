@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.tikal</groupId>
-	<artifactId>hello-k8</artifactId>
+	<artifactId>hello-java</artifactId>
 	<version>1.0.0</version>
 	<name>k8ws</name>
 	<description>Demo project for Spring Boot</description>
