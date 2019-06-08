@@ -31,7 +31,7 @@ kubectl describe secrets tikal
 Run the `secrets` job to fetch the secrets and log the secrets:
 
 ```
-kubectl create -f https://raw.githubusercontent.com/kelseyhightower/secrets/master/secrets.yaml
+kubectl create -f https://raw.githubusercontent.com/tikalk/kubernetes-workshop/master/src/secrets/secrets.yaml
 ```
 
 View the logs of the `secrets` job:
