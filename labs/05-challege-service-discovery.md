@@ -1,8 +1,11 @@
 # Challenge: Hello-World with Db
 
 In this challenge you will extend the helloworld app to record visits on your /visit controller.
-each time a REST API is made on the /visit endpoint , you will need to record this value in MySQL database and return a message
-"you are visitor number 4 !" 
+
+Each time a REST API is made on the /visit endpoint , you will need to record this value in MySQL database 
+and return a message
+
+## "you are visitor number 4 !" 
 
 Perform the following steps:
 
