@@ -17,7 +17,20 @@ Perform the following steps:
 
 * create a pod that has the image mysql:5.7 and has 4 environment variables from the secret :
  ```
- env:
+apiVersion: v1
+kind: Pod
+metadata:
+  name: database
+  labels:
+    app: database
+spec:
+  containers:
+  - name: mysql
+    image: mysql:5.7
+    ports:
+    - name: mysql-port
+      containerPort: 3306
+    env:
       - name: MYSQL_ROOT_PASSWORD
         valueFrom:
           secretKeyRef:
