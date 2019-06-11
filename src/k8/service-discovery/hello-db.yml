@@ -1,0 +1,35 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: helloworld-deployment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: helloworld-db
+    spec:
+      containers:
+      - name: helloworld-db
+        image: tshaiman/hello-java-db:1.0.0
+        ports:
+        - name: app-port
+          containerPort: 3000
+        env:
+          - name: MYSQL_HOST
+            value: database-service
+          - name: MYSQL_USER
+            valueFrom:
+              secretKeyRef:
+                name: db-secrets
+                key: username
+          - name: MYSQL_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: db-secrets
+                key: password
+          - name: MYSQL_DATABASE
+            valueFrom:
+              secretKeyRef:
+                name: db-secrets
+                key: database
