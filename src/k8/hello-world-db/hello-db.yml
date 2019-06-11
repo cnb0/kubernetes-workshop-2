@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: helloworld-db
-        image: tshaiman/hello-java-db:1.0.0
+        image: tshaiman/hello-java-db:1.0
         ports:
         - name: app-port
           containerPort: 3000
