@@ -27,16 +27,6 @@ Use the describe command to describe the nginx pod created by the nginx deployme
 kubectl describe pods <pod-name>
 ```
 
-## Autoscale
-
-```
-kubectl autoscale deployment nginx --cpu-percent=10 --min=2 --max=10
-```
-
-```
-kubectl get hpa
-```
-
 ## Expose Nginx
 
 ```
@@ -49,6 +39,15 @@ kubectl get services
 
 ```
 kubectl describe svc nginx
+```
+## Autoscale
+
+```
+kubectl autoscale deployment nginx --cpu-percent=10 --min=2 --max=10
+```
+
+```
+kubectl get hpa
 ```
 
 ## Troubleshooting
