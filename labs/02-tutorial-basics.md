@@ -6,6 +6,7 @@ In this tutorial you will walk through running a container with an autoscaling p
 
 ```
 kubectl run nginx --image nginx:1.10
+kubectl run nginx --image nginx:1.10 --labels="app=nginx" --replicas=3 --port=80 --dry-run -o yaml 
 ```
 
 ```
