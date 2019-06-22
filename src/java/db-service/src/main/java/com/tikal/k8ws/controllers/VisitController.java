@@ -17,9 +17,7 @@ public class VisitController {
 
 	@GetMapping(path="/visit") // Map ONLY GET Requests
 	public @ResponseBody
-	String addNewUser (@RequestParam String name) {
-		// @ResponseBody means the returned String is the response, not a view name
-		// @RequestParam means it is a parameter from the GET or POST request
+	String recordVisit (@RequestParam String name) {
 
 		Visit v = new Visit();
 		v.setName(name);
@@ -27,8 +25,8 @@ public class VisitController {
 		return "You are visitor number " + v.getId().toString();
 	}
 
-	@GetMapping(path="/all")
-	public @ResponseBody Iterable<Visit> getAllUsers() {
+	@GetMapping(path="/visits")
+	public @ResponseBody Iterable<Visit> getAllVisits() {
 		// This returns a JSON or XML with the users
 		return visitRepository.findAll();
 	}
