@@ -1,5 +1,7 @@
-package com.tikal.k8ws;
+package com.tikal.k8ws.controllers;
 
+import com.tikal.k8ws.data.Visit;
+import com.tikal.k8ws.data.VisitRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

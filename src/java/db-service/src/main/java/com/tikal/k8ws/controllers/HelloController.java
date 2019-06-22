@@ -1,4 +1,4 @@
-package com.tikal.k8ws;
+package com.tikal.k8ws.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
